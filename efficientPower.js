@@ -8,5 +8,9 @@ function is_even(x){
 
 // Time complexity = logn
 function power(b ,n){
-    return 
+    return n === 0
+        ? 1
+        : is_even(n)
+            ? sqaure(power(b, n/2));
+            : b * power(b, n-1);
 }
