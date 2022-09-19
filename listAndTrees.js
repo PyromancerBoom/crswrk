@@ -1,3 +1,30 @@
+// TREES ------------------------------------------------------------
+
+//Abstractions
+
+// Map Tree
+function map_tree(f , tree){
+    return map(sub_tree => !is_list(sub_tree)
+        ? f(sub_tree)
+        : map_tree(f, sub_tree), tree);
+}
+
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+function scale_tree(tree, factor){
+    return map(sub_tree => !is_list(sub_tree)
+            ? factor * sub_tree
+            : scale_tree(sub_tree, factor), tree);
+}
+// Using map_tree
+function scale_tree(tree, k){
+    return map_tree(data_item => data_item * factor, tree);
+}
+
+
+// LISTS ------------------------------------------------------------
+
 // Implmentation of Map
 function map(f, xs){
     return is_null(xs)
