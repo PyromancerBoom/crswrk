@@ -1,3 +1,3 @@
 # crswrk
 
-jsut saving some codes here lah
+just some codes here
