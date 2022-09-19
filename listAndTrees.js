@@ -5,6 +5,14 @@ function map(f, xs){
         : pair(f(head(xs)), map(f, tail(xs)));
 }
 
+// Making a copy of a list
+function copy(xs){
+    return map( t => t, xs);
+}
+
+const original = list(1,3,5);
+const my_copy = copy(original);
+
 
 
 function reverse(xs){
