@@ -1,3 +1,3 @@
-# crswrk
+# CS1101S
 
-just some codes here
+Some of my codes saved from my introductory course in NUS - CS1101S(Programming Methodology)
